@@ -4,11 +4,45 @@ Click the green **"Use this template"** button at the top of the page, then choo
 
 This will create your own copy of this project, which you can modify freely — no need to fork!   
 
+
+---    
+
+<p align="center">
+  <img src="./images/SHG_Logo.png" alt="SHG Logo">
+</p>
+
+
 ---
 
+<div style="font-size:2.5em; font-weight:bold; text-align:center; margin-top:20px;">SHG-CW-G-Heat-Equation</div>
+
+---
+
+&nbsp;
+
+<div align="center">
+
+| **Term** | **Definition** |
+|----------|----------------|
+| **SHG** | Second Harmonic Generation |
+| **CW** | Continuous Wave |
+| **G** | Gaussian |
+
+</div>
+
+&nbsp;
+
+<div align="center">
+
+Article title:  
+**Temperature Distribution in a Gaussian End-Pumped Nonlinear KTP Crystal: the Temperature Dependence of Thermal Conductivity and Radiation Boundary Condition**
+
+</div>
+
+
+
+---
 ***Table of Contents***
-
-
 
 <div>
   &nbsp;&nbsp;&nbsp;&nbsp;<a href="#1-about-this-repository"><i><b>1. About this repository</b></i></a>
@@ -36,7 +70,7 @@ This will create your own copy of this project, which you can modify freely — 
 ## 1. About this repository
 
 
-This repository contains the research article **“Temperature Distribution in a Gaussian End-Pumped Nonlinear KTP Crystal: the Temperature Dependenc e of Thermal Conductivity and Radiation Boundary Condition”**, together with supporting source code, numerical results, and reproducibility assets.  
+This repository contains the research article **“Temperature Distribution in a Gaussian End-Pumped Nonlinear KTP Crystal: the Temperature Dependence of Thermal Conductivity and Radiation Boundary Condition”**, together with supporting source code, numerical results, and reproducibility assets.  
 
 
 Continuous-wave (CW) second harmonic generation in nonlinear crystals is strongly affected by heat dissipation. This work analyzes the **transient temperature distribution** in a KTP crystal under Gaussian end-pumping by solving the nonlinear, inhomogeneous heat equation. Unlike many earlier models, the study incorporates:  
@@ -49,7 +83,7 @@ A finite difference method (FDM) solver was implemented to numerically evaluate 
 
 ```
 Folder PATH listing
-+---1. Cite Us                    <-- Contains citation materials and papers
++---citation                      <-- Contains citation materials and papers
 │       1_Heat-Equation_Continu…  <-- Heat equation analytical paper
 │       2_Heat-Equation_Continu…  <-- Heat equation continuous wave paper
 │       3_Heat-Equation_Pulsed-…  <-- Heat equation pulsed wave paper
@@ -59,15 +93,15 @@ Folder PATH listing
 │       7_Coupled_Continuous-Wa…  <-- Coupled continuous wave paper
 │       README.md                 <-- Citation guidelines and information
 │
-+---2. Code_Results               <-- Contains source code and results
++---src                           <-- Contains source code
 │       2_Heat-Equation_Continu…  <-- Fortran finite difference solver
-│       +---2_Results             <-- Numerical simulation results
-│       │       ST_085_time_1_T_r.plt  <-- Radial temperature data
-│       │       ST_085_time_1_T_t.plt  <-- Transverse temperature data
-│       │       ST_085_time_1_T_z.plt  <-- Axial temperature data
-│       │
 │
-│       2_Heat-Equation_Continu…  <-- Main research paper PDF
++---results                       <-- Numerical simulation results
+│       ST_085_time_1_T_r.plt     <-- Radial temperature data
+│       ST_085_time_1_T_t.plt     <-- Transverse temperature data
+│       ST_085_time_1_T_z.plt     <-- Axial temperature data
+│
+│       Article_SHG_Continuous…   <-- Main research paper PDF
 │       CITATION.cff              <-- Citation metadata file
 │       LICENSE                   <-- Project license information
 │       README.md                 <-- Project overview and documentation
@@ -93,19 +127,19 @@ Folder PATH listing
    ```
 
 2. **Explore the Research Papers**
-   - Navigate to the `1. Cite Us/` folder
-   - Read the main research paper: `SHG_Continuous-Wave_Gaussian_Heat-Equation.pdf`
+   - Navigate to the `citation/` folder
+   - Read the main research paper: `Article_SHG_Continuous-Wave_Gaussian_Heat-Equation.pdf`
    - Review additional papers for comprehensive understanding
 
 3. **Compile and Run the Fortran Code**
    ```bash
-   cd "2. Code_Results"
+   cd src
    gfortran -o heat_equation 2_Heat-Equation_Continuous-Wave_Gaussian.f90
    ./heat_equation
    ```
 
 4. **Analyze Results**
-   - Check the `2_Results/` folder for output files
+   - Check the `results/` folder for output files
    - Examine `.plt` files for temperature distribution data
    - Use plotting software (Gnuplot, Python matplotlib, etc.) to visualize results
 
@@ -118,7 +152,7 @@ Folder PATH listing
 
 
 ## 3. How to Cite Us
-Please refer to the [**1. Cite Us**](./1.%20Cite%20Us/) folder for accurate citations. It contains essential guidelines for accurate referencing, ensuring accurate acknowledgement of our work.
+Please refer to the [**citation**](./citation/) folder for accurate citations. It contains essential guidelines for accurate referencing, ensuring accurate acknowledgement of our work.
 
 
   
