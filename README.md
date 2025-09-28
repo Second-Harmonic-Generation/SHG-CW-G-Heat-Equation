@@ -9,11 +9,34 @@ This will create your own copy of this project, which you can modify freely — 
 ***Table of Contents***
 
 
+
+<div>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#1-about-this-repository"><i><b>1. About this repository</b></i></a>
+</div>
+&nbsp;
+
+<div>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#2-getting-started"><i><b>2. Getting Started</b></i></a>
+</div>
+&nbsp;
+
+<div>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#3-how-to-cite-us"><i><b>3. How to Cite Us</b></i></a>
+</div>
+&nbsp;
+
+
+<div>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#4-contact-information"><i><b>4. Contact Information</b></i></a>
+</div>
+&nbsp;
+
 ---    
 
 ## 1. About this repository
 
-This repository contains the research article **“Temperature Distribution in a Gaussian End-Pumped Nonlinear KTP Crystal: the Temperature Dependence of Thermal Conductivity and Radiation Boundary Condition”**, together with supporting source code, numerical results, and reproducibility assets.  
+
+This repository contains the research article **“Temperature Distribution in a Gaussian End-Pumped Nonlinear KTP Crystal: the Temperature Dependenc e of Thermal Conductivity and Radiation Boundary Condition”**, together with supporting source code, numerical results, and reproducibility assets.  
 
 
 Continuous-wave (CW) second harmonic generation in nonlinear crystals is strongly affected by heat dissipation. This work analyzes the **transient temperature distribution** in a KTP crystal under Gaussian end-pumping by solving the nonlinear, inhomogeneous heat equation. Unlike many earlier models, the study incorporates:  
@@ -23,11 +46,6 @@ Continuous-wave (CW) second harmonic generation in nonlinear crystals is strongl
 
 A finite difference method (FDM) solver was implemented to numerically evaluate the system. Results show that neglecting thermal conductivity variations leads to significant temperature prediction errors, and while radiative effects are negligible in thin crystals, they become relevant for larger geometries with wide pump beams. These findings improve modeling accuracy for **thermal lensing, phase mismatching, and efficiency reduction** in nonlinear optical systems.  
 
----
-
-
-
-## 2. Directory Structure
 
 ```
 Folder PATH listing
@@ -57,11 +75,54 @@ Folder PATH listing
 
 ```
 
+---
+
+## 2. Getting Started
+
+### 2.1. Prerequisites
+- **Fortran Compiler** (gfortran, Intel Fortran, or similar)
+- **Text Editor** (VS Code, Cursor, or any Fortran-capable editor)
+- **PDF Reader** (for accessing research papers)
+- **Git** (for cloning the repository)
+
+### 2.2. Quick Start
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Second-Harmonic-Generation/SHG-CW-G-Heat-Equation.git
+   cd SHG-CW-G-Heat-Equation
+   ```
+
+2. **Explore the Research Papers**
+   - Navigate to the `1. Cite Us/` folder
+   - Read the main research paper: `SHG_Continuous-Wave_Gaussian_Heat-Equation.pdf`
+   - Review additional papers for comprehensive understanding
+
+3. **Compile and Run the Fortran Code**
+   ```bash
+   cd "2. Code_Results"
+   gfortran -o heat_equation 2_Heat-Equation_Continuous-Wave_Gaussian.f90
+   ./heat_equation
+   ```
+
+4. **Analyze Results**
+   - Check the `2_Results/` folder for output files
+   - Examine `.plt` files for temperature distribution data
+   - Use plotting software (Gnuplot, Python matplotlib, etc.) to visualize results
+
+5. **Modify Parameters** (Optional)
+   - Edit the Fortran source code to change simulation parameters
+   - Recompile and run to explore different scenarios
+   - Compare results with published findings
+
+---
+
+
 ## 3. How to Cite Us
-Please refer to the [**0. Cite Us**](https://github.com/Mostafa-M-Rezaee/SHG__Second_Harmonic_Generation/tree/main/0.%20Cite%20Us) folder for accurate citations. It contains essential guidelines for accurate referencing, ensuring accurate acknowledgement of our work.
+Please refer to the [**1. Cite Us**](./1.%20Cite%20Us/) folder for accurate citations. It contains essential guidelines for accurate referencing, ensuring accurate acknowledgement of our work.
 
 
-## 4. For Additional Questions
-If you have questions that are not covered in the resources above, the best way to reach [Mostafa Rezaee](https://www.linkedin.com/in/mostafa-rezaee/).    
-- Gmail: mostafa.mohammadrezaee@gmail.com       
-- [Linkedin](https://www.linkedin.com/in/mostafa-rezaee/)        
+  
+## 4. Contact Information
+
+For questions not addressed in the resources above, please connect with [Mostafa Rezaee](https://www.linkedin.com/in/mostafa-rezaee/) on LinkedIn for personalized assistance.
