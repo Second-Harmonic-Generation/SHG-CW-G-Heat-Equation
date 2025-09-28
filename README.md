@@ -75,7 +75,6 @@ Folder PATH listing
 
 ```
 
----
 
 ## 2. Getting Started
 
