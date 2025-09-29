@@ -84,22 +84,24 @@ Folder PATH listing
 │       7_Coupled_Continuous-Wa…  <-- Coupled continuous wave paper
 │       README.md                 <-- Citation guidelines and information
 │
-+---src                           <-- Contains source code
-│       2_Heat-Equation_Continu…  <-- Fortran finite difference solver
++---images                        <-- Contains project images and logos
+│       SHG_Logo.png              <-- SHG project logo
 │
 +---results                       <-- Numerical simulation results
 │       ST_085_time_1_T_r.plt     <-- Radial temperature data
 │       ST_085_time_1_T_t.plt     <-- Transverse temperature data
 │       ST_085_time_1_T_z.plt     <-- Axial temperature data
 │
-│       Article_SHG_Continuous…   <-- Main research paper PDF
++---src                           <-- Contains source code
+│       Code_SHG-CW-G-Heat-Equ…   <-- Fortran finite difference solver
+│
+│       Article_SHG-CW-G-Heat-…   <-- Main research paper PDF
 │       CITATION.cff              <-- Citation metadata file
 │       LICENSE                   <-- Project license information
 │       README.md                 <-- Project overview and documentation
 │
 
 ```
-
 
 ## 2. Getting Started
 
