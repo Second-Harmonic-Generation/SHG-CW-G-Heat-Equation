@@ -4,21 +4,13 @@ Click the green **"Use this template"** button at the top of the page, then choo
 
 This will create your own copy of this project, which you can modify freely — no need to fork!   
 
-
----    
-
+ 
 <p align="center">
   <img src="./images/SHG_Logo.png" alt="SHG Logo">
 </p>
 
 
----
-
-<div style="font-size:2.5em; font-weight:bold; text-align:center; margin-top:20px;">SHG-CW-G-Heat-Equation</div>
-
----
-
-&nbsp;
+<h1 align="center">SHG-CW-G-Heat-Equation</h1>
 
 <div align="center">
 
@@ -27,21 +19,20 @@ This will create your own copy of this project, which you can modify freely — 
 | **SHG** | Second Harmonic Generation |
 | **CW** | Continuous Wave |
 | **G** | Gaussian |
-
 </div>
 
 &nbsp;
 
 <div align="center">
 
-Article title:  
+Article title:       
 **Temperature Distribution in a Gaussian End-Pumped Nonlinear KTP Crystal: the Temperature Dependence of Thermal Conductivity and Radiation Boundary Condition**
-
 </div>
 
-
+&nbsp;
 
 ---
+
 ***Table of Contents***
 
 <div>
