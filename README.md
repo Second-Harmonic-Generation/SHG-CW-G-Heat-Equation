@@ -6,7 +6,7 @@ This will create your own copy of this project, which you can modify freely — 
 
  
 <p align="center">
-  <img src="./images/SHG-banner.png" alt="SHG Logo">
+  <img src="./images/SHG-banner.png" alt="SHG Banner">
 </p>
 
 
