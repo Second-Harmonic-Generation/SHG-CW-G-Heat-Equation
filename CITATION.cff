@@ -1,0 +1,11 @@
+@article{sabaeian2015temperature,
+  title={Temperature distribution in a Gaussian end-pumped nonlinear KTP crystal: the temperature dependence of thermal conductivity and radiation boundary condition},
+  author={Sabaeian, Mohammad and Jalil-Abadi, Fatemeh Sedaghat and Rezaee, Mostafa Mohammad and Motazedian, Alireza and Shahzadeh, Mohammadreza},
+  journal={Brazilian Journal of Physics},
+  volume={45},
+  pages={1--9},
+  year={2015},
+  publisher={Springer},
+  abstract={The presence of a temperature-dependent thermal conductivity and the heat radiation boundary condition in the diffusion-type heat equation driven by a Gaussian source make it impossible to find an analytical solution for temperature distribution in the solid-state laser media. In this work, a temperature distribution for a solid-state end-pumped KTP (KTiOPO4) crystal under a Gaussian continuous wave as a heat source is reported. More precisely, the effects of considering the temperature-dependent nature of the thermal conductivity of the KTP crystal and the heat radiation from the end faces of the crystal, in addition to heat convection, which are usually ignored, were studied. It was shown that considering the temperature dependence of thermal conductivity leads to significantly different results compared to constant thermal conductivity case. In addition, it was shown that the radiation can be influential for crystals with large surfaces from which the radiation can occur. Making the crystal thinner, the radiation impact
+becomes negligible and can be ignored.}
+}
