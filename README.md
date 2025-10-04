@@ -6,7 +6,7 @@ This will create your own copy of this project, which you can modify freely — 
 
  
 <p align="center">
-  <img src="./images/SHG-banner.png" alt="SHG Banner">
+  <img src="./images/SHG-banner.png" alt="SHG Logo">
 </p>
 
 
@@ -85,7 +85,7 @@ Folder PATH listing
 │       README.md                 <-- Citation guidelines and information
 │
 +---images                        <-- Contains project images and logos
-│       SHG_Logo.png              <-- SHG project logo
+│       SHG-banner.png            <-- SHG project banner
 │
 +---results                       <-- Numerical simulation results
 │       ST_085_time_1_T_r.plt     <-- Radial temperature data
