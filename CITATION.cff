@@ -15,7 +15,7 @@ title: "Temperature Distribution in a Gaussian End-Pumped Nonlinear KTP Crystal:
 version: 1.0.0
 doi: 10.1007/s13538-014-0291-x
 date-released: 2014-12-19
-url: "https://github.com/Second-Harmonic-Generation/SHG-CW-G-Heat-Equation"
+url: "https://doi.org/10.1007/s13538-014-0291-x"
 repository-code: "https://github.com/Second-Harmonic-Generation/SHG-CW-G-Heat-Equation"
 abstract: "The presence of a temperature-dependent thermal conductivity and the heat radiation boundary condition in the diffusion-type heat equation driven by a Gaussian source make it impossible to find an analytical solution for temperature distribution in the solid-state laser media. In this work, a temperature distribution for a solid-state end-pumped KTP (KTiOPO4) crystal under a Gaussian continuous wave as a heat source is reported. More precisely, the effects of considering the temperature-dependent nature of the thermal conductivity of the KTP crystal and the heat radiation from the end faces of the crystal, in addition to heat convection, which are usually ignored, were studied. It was shown that considering the temperature dependence of thermal conductivity leads to significantly different results compared to constant thermal conductivity case. In addition, it was shown that the radiation can be influential for crystals with large surfaces from which the radiation can occur. Making the crystal thinner, the radiation impact becomes negligible and can be ignored."
 license: "MIT"
