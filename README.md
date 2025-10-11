@@ -10,14 +10,14 @@ This will create your own copy of this project, which you can modify freely — 
 </p>
 
 
-<h1 align="center">SHG-PW-G-Heat-Equation</h1>
+<h1 align="center">SHG-CW-G-Heat-Equation</h1>
 
 <div align="center">
 
 | **Term** | **Definition** |
 |----------|----------------|
 | **SHG** | Second Harmonic Generation |
-| **PW** | Pulsed Wave |
+| **CW** | Continuous Wave |
 | **G** | Gaussian |
 </div>
 
