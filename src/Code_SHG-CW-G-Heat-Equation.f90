@@ -7,7 +7,7 @@
 !            **************************************************************************************
 !            *                                                                                    *
 !            * File name:                                                                         *
-!            *     2. Heat Equation _ Continuous Wave Gaussian _ Computational.F90                *
+!            *     Code_SHG-CW-G-Heat-Equation.F90                                                *
 !            *                                                                                    *
 !            * This Fortran code is developed specifically for the article titled:                *
 !            *     Temperature Distribution in a Gaussian End-Pumped Nonlinear KTP Crystal:       *
