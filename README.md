@@ -134,7 +134,7 @@ Folder PATH listing
 
 2. **Explore the Research Papers**
    - Navigate to the `citation/` folder
-   - Read the main research paper: `Article_SHG_Continuous-Wave_Gaussian_Heat-Equation.pdf`
+   - Read the main research paper: `Article_SHG-CW-G-Heat-Equation.pdf`
    - Review additional papers for comprehensive understanding
 
 3. **Compile and Run the Toolkit**
