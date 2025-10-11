@@ -64,23 +64,9 @@ This repository contains the **Toolkit for Modeling of 3D Temperature Distributi
 
 ### Toolkit Overview
 
-The toolkit comprises modules for:
-- **Geometry and material definitions** for KTP crystals
-- **Boundary and cooling models** with various heat transfer mechanisms
-- **Transient and steady-state finite-difference solvers** for temperature field computation
+The toolkit provides comprehensive modules for geometry and material definitions of KTP crystals, boundary and cooling models with various heat transfer mechanisms, and transient and steady-state finite-difference solvers for temperature field computation.
 
-### Key Features
-
-- **Parameterized scenario sweeps** including:
-  - Temperature-dependent vs. constant thermal conductivity
-  - Convection ± radiation boundary conditions
-  - Heat-transfer coefficients spanning 6.5–2.0×10⁴ W·m⁻²·K⁻¹
-- **Compiled Fortran kernels** with built-in benchmark reporting
-- **Reproducible pipelines** with versioned code repository
-- **Exportable datasets** with spatiotemporal temperature fields
-- **Radial and axial temperature profiles** for comprehensive analysis
-
-### Validation
+The toolkit supports parameterized scenario sweeps including temperature-dependent versus constant thermal conductivity, convection with and without radiation boundary conditions, and heat-transfer coefficients spanning 6.5–2.0×10⁴ W·m⁻²·K⁻¹. It features compiled Fortran kernels with built-in benchmark reporting, reproducible pipelines with versioned code repository, and exportable datasets with spatiotemporal temperature fields. The toolkit generates both radial and axial temperature profiles for comprehensive analysis.
 
 The implementation has been validated by reproducing temperature distributions and trends for KTP under Gaussian CW pumping, including the effects of temperature-dependent conductivity and boundary conditions. This toolkit was used to solve the thermal modeling problem described in the research article **"Temperature Distribution in a Gaussian End-Pumped Nonlinear KTP Crystal: the Temperature Dependence of Thermal Conductivity and Radiation Boundary Condition"**.  
 
