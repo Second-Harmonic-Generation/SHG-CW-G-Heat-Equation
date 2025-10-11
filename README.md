@@ -10,14 +10,14 @@ This will create your own copy of this project, which you can modify freely — 
 </p>
 
 
-<h1 align="center">SHG-CW-G-Heat-Equation</h1>
+<h1 align="center">SHG-PW-G-Heat-Equation</h1>
 
 <div align="center">
 
 | **Term** | **Definition** |
 |----------|----------------|
 | **SHG** | Second Harmonic Generation |
-| **CW** | Continuous Wave |
+| **PW** | Pulsed Wave |
 | **G** | Gaussian |
 </div>
 
@@ -60,21 +60,34 @@ Article title:
 
 ## 1. About this repository
 
+This repository contains the **Toolkit for Modeling of 3D Temperature Distribution in KTP Crystal: Continuous-Wave Gaussian Second Harmonic Generation**, an open-source toolkit for modeling the thermal dynamics that underpin continuous-wave second-harmonic generation (CW SHG), using KTP as a case study.
 
-This repository contains the research article **“Temperature Distribution in a Gaussian End-Pumped Nonlinear KTP Crystal: the Temperature Dependence of Thermal Conductivity and Radiation Boundary Condition”**, together with supporting source code, numerical results, and reproducibility assets.  
+### Toolkit Overview
 
+The toolkit comprises modules for:
+- **Geometry and material definitions** for KTP crystals
+- **Boundary and cooling models** with various heat transfer mechanisms
+- **Transient and steady-state finite-difference solvers** for temperature field computation
 
-Continuous-wave (CW) second harmonic generation in nonlinear crystals is strongly affected by heat dissipation. This work analyzes the **transient temperature distribution** in a KTP crystal under Gaussian end-pumping by solving the nonlinear, inhomogeneous heat equation. Unlike many earlier models, the study incorporates:  
+### Key Features
 
-- **Temperature-dependent thermal conductivity** of KTP  
-- **Convective and radiative boundary conditions** at crystal surfaces  
+- **Parameterized scenario sweeps** including:
+  - Temperature-dependent vs. constant thermal conductivity
+  - Convection ± radiation boundary conditions
+  - Heat-transfer coefficients spanning 6.5–2.0×10⁴ W·m⁻²·K⁻¹
+- **Compiled Fortran kernels** with built-in benchmark reporting
+- **Reproducible pipelines** with versioned code repository
+- **Exportable datasets** with spatiotemporal temperature fields
+- **Radial and axial temperature profiles** for comprehensive analysis
 
-A finite difference method (FDM) solver was implemented to numerically evaluate the system. Results show that neglecting thermal conductivity variations leads to significant temperature prediction errors, and while radiative effects are negligible in thin crystals, they become relevant for larger geometries with wide pump beams. These findings improve modeling accuracy for **thermal lensing, phase mismatching, and efficiency reduction** in nonlinear optical systems.  
+### Validation
+
+The implementation has been validated by reproducing temperature distributions and trends for KTP under Gaussian CW pumping, including the effects of temperature-dependent conductivity and boundary conditions. This toolkit was used to solve the thermal modeling problem described in the research article **"Temperature Distribution in a Gaussian End-Pumped Nonlinear KTP Crystal: the Temperature Dependence of Thermal Conductivity and Radiation Boundary Condition"**.  
 
 
 ```
 Folder PATH listing
-+---citation                      <-- Contains citation materials and papers
++---citation                      <-- Contains citation materials and research papers
 │       1_Heat-Equation_Continu…  <-- Heat equation analytical paper
 │       2_Heat-Equation_Continu…  <-- Heat equation continuous wave paper
 │       3_Heat-Equation_Pulsed-…  <-- Heat equation pulsed wave paper
@@ -87,18 +100,18 @@ Folder PATH listing
 +---images                        <-- Contains project images and logos
 │       SHG-banner.png            <-- SHG project banner
 │
-+---results                       <-- Numerical simulation results
-│       ST_085_time_1_T_r.plt     <-- Radial temperature data
-│       ST_085_time_1_T_t.plt     <-- Transverse temperature data
-│       ST_085_time_1_T_z.plt     <-- Axial temperature data
++---results                       <-- Numerical simulation results and benchmark data
+│       ST_085_time_1_T_r.plt     <-- Radial temperature profile data
+│       ST_085_time_1_T_t.plt     <-- Transverse temperature profile data
+│       ST_085_time_1_T_z.plt     <-- Axial temperature profile data
 │
-+---src                           <-- Contains source code
-│       Code_SHG-CW-G-Heat-Equ…   <-- Fortran finite difference solver
++---src                           <-- Toolkit source code and documentation
+│       Code_SHG-CW-G-Heat-Equ…   <-- Fortran finite difference solver (main toolkit)
 │
-│       Article_SHG-CW-G-Heat-…   <-- Main research paper PDF
+│       Article_SHG-CW-G-Heat-…   <-- Research paper PDF (problem solved by toolkit)
 │       CITATION.cff              <-- Citation metadata file
 │       LICENSE                   <-- Project license information
-│       README.md                 <-- Project overview and documentation
+│       README.md                 <-- Toolkit overview and documentation
 │
 
 ```
@@ -124,22 +137,25 @@ Folder PATH listing
    - Read the main research paper: `Article_SHG_Continuous-Wave_Gaussian_Heat-Equation.pdf`
    - Review additional papers for comprehensive understanding
 
-3. **Compile and Run the Fortran Code**
+3. **Compile and Run the Toolkit**
    ```bash
    cd src
-   gfortran -o heat_equation 2_Heat-Equation_Continuous-Wave_Gaussian.f90
+   gfortran -o heat_equation Code_SHG-CW-G-Heat-Equation.f90
    ./heat_equation
    ```
 
 4. **Analyze Results**
-   - Check the `results/` folder for output files
-   - Examine `.plt` files for temperature distribution data
+   - Check the `results/` folder for output files and benchmark data
+   - Examine `.plt` files for temperature distribution profiles (radial, transverse, axial)
    - Use plotting software (Gnuplot, Python matplotlib, etc.) to visualize results
 
-5. **Modify Parameters** (Optional)
+5. **Run Parameterized Scenarios** (Optional)
    - Edit the Fortran source code to change simulation parameters
-   - Recompile and run to explore different scenarios
-   - Compare results with published findings
+   - Explore different scenarios:
+     - Temperature-dependent vs. constant thermal conductivity
+     - Convection ± radiation boundary conditions
+     - Various heat-transfer coefficients (6.5–2.0×10⁴ W·m⁻²·K⁻¹)
+   - Recompile and run to compare results with published findings
 
 ---
 
